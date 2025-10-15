@@ -16,6 +16,7 @@ export default function RatingInput({ value, onChange, max = 5 }: RatingInputPro
           <button
             key={index}
             type="button"
+            data-testid="star"
             onClick={() => onChange(starValue)}
             className={`
               transition-all duration-200 ease-out transform
